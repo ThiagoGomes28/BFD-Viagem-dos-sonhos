@@ -1,30 +1,60 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>aula-03</title>
 </head>
+
 <body>
+    <h1>Lista de Exercicios em javaScript</h1>
+
+    <!--<button onclick="saudacao()">
+        Mostrar mensagem do dia
+    </button> -->
+
+    <input id="caixa" type="text">
+    <button onclick="imprimir()">
+        mostra na tela
+    </button>
+
     <script>
         /* Exercicio 06 - Aluno reprovado direto caso tire uma nota 0 */
 
-     var n1 = prompt ("Digite o primeiro numero:");
-     var n2 = prompt ("Digite o segundo numero:");
+        /* var n1 = prompt("Digite o primeiro numero:");
+        var n2 = prompt("Digite o segundo numero:");
 
-     n1 = parseInt(n1);
-     n2 = parseInt(n2);
+        n1 = parseInt(n1);
+        n2 = parseInt(n2);
 
-     media = ((n1 + n2) / 2);
-     
-    if(n1 == 0 || n2 == 0) {
-        alert ("Reprovado, pois zero uma nota.");
-    } else if (media >= 5){
-        alert(" Aprovado");
-     } else {
-        alert("Reprovado");
-     }
+        media = ((n1 + n2) / 2);
+
+        if (n1 == 0 || n2 == 0) {
+            alert("Reprovado, pois zero uma nota.");
+        } else if (media >= 5) {
+            alert(" Aprovado");
+        } else {
+            alert("Reprovado");
+        } 
+         */
+
+        /* Exercicio 07 - botão que mostra uma mensagem */
+
+        /* Exercicio 08 - input com botão que mostra uma mensagem */
+
+        /* function saudacao(){
+            alert ("Seja Bem-vindo!");
+        } */
+
+        function imprimir(){
+            var texto =document.querySelector('#caixa').value;
+            alert(texto);
+        }
+
+        /* Exercicio 09 - lampada ligada e desligada */
 
     </script>
 </body>
+
 </html>

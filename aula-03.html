@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>aula-03</title>
+</head>
+<body>
+    <script>
+        /* Exercicio 06 - Aluno reprovado direto caso tire uma nota 0 */
+
+     var n1 = prompt ("Digite o primeiro numero:");
+     var n2 = prompt ("Digite o segundo numero:");
+
+     n1 = parseInt(n1);
+     n2 = parseInt(n2);
+
+     media = ((n1 + n2) / 2);
+     
+    if(n1 == 0 || n2 == 0) {
+        alert ("Reprovado, pois zero uma nota.");
+    } else if (media >= 5){
+        alert(" Aprovado");
+     } else {
+        alert("Reprovado");
+     }
+
+    </script>
+</body>
+</html>

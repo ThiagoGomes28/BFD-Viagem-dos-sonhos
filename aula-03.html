@@ -20,11 +20,11 @@
     </button><br><br><br> -->
 
 
-    <button onclick="botaos()">
+    <button onclick="botaos(false)">
         Desligar
     </button>
-    <img id="imagens" src="./imagens/pic_bulboff.gif" alt="lampada">
-    <button onclick="botaos()">
+    <img id="lampada" src="./imagens/pic_bulboff.gif" alt=" a lâmpada">
+    <button onclick="botaos(true)">
         Ligar
     </button>
 
@@ -64,9 +64,12 @@
 
         /* Exercicio 09 - lampada ligada e desligada */
 
-        function botaos() {
-            if (fefe) {
-
+        function botaos(estado) {
+            if (estado) {
+                document.getElementById("lampada").src = "./imagens/pic_bulbon.gif"
+                
+            }else{
+                document.getElementById("lampada").src = "./imagens/pic_bulboff.gif"
             }
         }
 

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula-04</title>
+</head>
+
+<body>
+    <h1>Aula Presencial- 04</h1>
+
+    <button>digite o seu numero</button>
+
+    <Script>
+        /*  var n1 = document.querySelector("#numeros").value
+        var pares = "";
+
+        for (let i = 0; i < n1.length; i++) {
+            if(n1 % 0) {
+                pares + i + ", ";
+            }
+            
+        }
+
+        function verificador() {
+
+        } */
+
+
+
+
+
+        /* Digite um numero até digitar numero negativo ou zero, mostrar quantos numeros foram digitados, soma e a media.*/
+        function coletarnumero() {
+            var numero;
+            var soma = 0;
+            var contador = 0;
+
+            do {
+
+                numero = parseFloat(prompt("Digite um numero: "));
+
+                if (numero > 0) {
+                    soma += numero;
+                    contador++;
+                }
+            } while (numero > 0) 
+
+            if (contador > 0) {
+                var media = soma / contador;
+            alert("números digitados: " + contador +
+                    " soma: " + soma + " Média: " + media)
+                }
+             else {
+                alert("Digite um valido");
+            }
+        }
+        
+
+        coletarnumero()
+
+
+
+    </Script>
+</body>
+
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercicios - aula 05</title>
+</head>
+<body>
+    <h1>exercicios aula 05</h1>
+    <h2>Frutas</h2>
+    <input type="text" placeholder="Digite o nome da fruta aqui: ">
+    <button onclick="adicionarfrutas()" id="fruta">Adicionar</button>
+
+    <h2>Cadrastro de Pessoas</h2>
+    <input type="text" id="nome" placeholder="Nome aqui: "><br>
+    <input type="number" id="idade" placeholder="Idade aqui: "><br>
+    <input type="text" id="cidade" placeholder="Cidade aqui: "><br>
+    <button onclick="adicionarPessoa()" id="pessoa" >Salvar</button>
+
+    <p id="info"></p>
+    <p id="info2"></p>
+    <script>
+        var frutas = [];
+        function adicionarfrutas() {
+            var frutas_adicionadas = document.getElementById("fruta").value;
+            frutas.push(frutas_adicionadas);
+            document.getElementById("fruta").value = "";
+            document.getElementById("info").innerHTML = "A fruta " + frutas_adicionadas + " Adicionada" 
+        }
+
+        var pessoa = [];
+        function adicionarPessoa(){
+            var nome_adicionado = document.getElementById("nome").value;
+            /*pessoa.push(nome_adicionado);
+            pessoa.push(idade_adicionado);
+            pessoa.push(cidade_adicionado);*/
+            var idade_adicionado = document.getElementById("idade").value;
+            var cidade_adicionado = document.getElementById("cidade").value;
+
+            var nova_pessoa = {
+                nome_adicionado: nome_adicionado,
+                idade_adicionado: idade_adicionado,
+                cidade_adicionado: cidade_adicionado
+            }
+
+            pessoa.push(nova_pessoa);
+
+            document.getElementById("nome").value = "";
+            document.getElementById("idade").value = "";
+            document.getElementById("cidade").value = "";
+            document.getElementById("info2").innerHTML = "Pessoa: Nome: " + nome_adicionado + " Idade: " + idade_adicionado +
+             " Cidade: " + cidade_adicionado;
+        }
+    </script>
+</body>
+</html>

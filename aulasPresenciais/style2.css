@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+nav{
+    padding: 10px;
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    gap: 20px;
+
+}
+
+body {
+    background-color: white;
+}
+
+h1 {
+    color: black;
+    font-size: 40px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border: 2px solid brown;
+}
+
+.estilo{
+    color: green;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: medium;
+    margin: 10px;
+    padding: 0 0 200 0px;
+    background-color: black;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:link {
+    color: black;
+    transition: 1s;
+}
+
+a:visited {
+    color: yellowgreen;
+    background-color: black;
+    transition: 1s;
+}
+
+a:active {
+    color: green;
+    background-color: black;
+    transition: 1s;
+}
+
+a:hover {
+    color: crimson;
+    transition: 1s;
+}
+
+ /*.pai{
+    background-color: aquamarine;
+    
+    width: 100%;
+    float: auto;
+}
+
+.pai div{
+    width: 33%;
+}
+
+.primeiro_filho {
+    background-color: darkblue;
+}
+
+.segundo_filho{
+    background-color: blueviolet;
+} */
+
+div {
+    display: inline-block;
+}
+
+th{
+    color: white;
+    background-color: green ;
+}
+
+th, td {
+    padding: 20px;
+}
+
+th{
+    text-align: left;
+}
+
+table,th,td {
+    border: 2px solid black;
+    border-collapse:collapse;
+    text-align: center;
+}
+
+footer {
+    background-color: black;
+}

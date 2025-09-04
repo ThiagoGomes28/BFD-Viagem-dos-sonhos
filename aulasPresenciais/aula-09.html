@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula-09</title>
+</head>
+
+<body>
+    <h1>Aula - 09</h1>
+    <h2>Atividade</h2>
+
+    <input id="texto1" type="text" placeholder="Digite aqui...">
+    <br><br>
+    <input id="texto2" type="text" placeholder="Digite aqui...">
+    <button id="botao" onclick="mostrarDados()">Enviar</button>
+
+
+    <p id="tamanho"></p>
+    <p id="juntos"></p>
+    <p id="corta"></p>
+    
+</body>
+
+<script>
+    let palavra1 = "";
+    let palavra2 = "";
+
+    let tamanho = "";
+    let tamanhoPalavra = "";
+
+
+    function mostrarDados() {
+        palavra1 = document.getElementById("texto1").value;
+        tamanho = palavra1.length;
+        tamanhoPalavra = document.getElementById("tamanho").innerHTML = "O tamanho da Palavra é: " + tamanho;
+
+        palavra2 = document.getElementById("texto2").value;
+        let doisTextos = palavra1 + " " + palavra2;
+        let textosJuntos = document.getElementById("juntos").innerHTML = "O Concat é: " + doisTextos;
+
+        let corte = palavra1.slice(0,4);
+        let mostrarCorte = document.getElementById("corta").innerHTML = "Palavra cortada: " + corte;
+
+        
+
+    };
+
+    // let frase = palavra1.concat(" ", palavra2);
+    // console.log(frase);
+
+    let nome = "thiago";
+    // let letra = nome.at(2);
+    // console.log(letra);
+
+    // let corte1 = nome.slice(0,3);
+    // console.log(corte1);
+    // let corte2 = nome.slice(2);
+    // console.log(corte2);
+    // let corte3 = nome.slice(-2);
+    // console.log(corte3);
+    // let corte4 = nome.slice(-2,-1);
+    // console.log(corte4);
+
+    // let minusculo = nome.toLocaleLowerCase();
+    // console.log(minusculo);
+    // let maiusculo = nome.toLocaleUpperCase();
+    // console.log(maiusculo);
+
+    // let curso = "Projeto - BFD";
+    // let nomeCurso = curso.replace("BFD", "Bolsa Futuro Digital");
+    // console.log(nomeCurso);
+
+    // let texto = "a, b, c, d";
+    // const myarray = texto.split(",");
+    // console.log(myarray);
+    // console.log(myarray[2]);
+    // document.getElementById("teste").innerHTML ...
+
+    // let frase = " hello world, hi world";
+    // let index = frase.indexOf("world");
+    // console.log(index);
+
+    // var possui = frase.includes("olá");
+    // console.log(possui);
+
+</script>
+
+</html>

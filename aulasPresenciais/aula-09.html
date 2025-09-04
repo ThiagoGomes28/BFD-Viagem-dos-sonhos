@@ -22,6 +22,10 @@
     <p id="corta"></p>
     <p id="minusculo"></p>
     <p id="letraalterada"></p>
+    <p id="segundaposicao"></p>
+    <p id="possuiA"></p>
+    
+
     
 </body>
 
@@ -44,6 +48,9 @@
 
         let corte = palavra1.slice(0,4);
         let mostrarCorte = document.getElementById("corta").innerHTML = "Palavra cortada: " + corte;
+
+        let procuraletra = palavra1.indexOf("a");
+        let temLetraA = document.getElementById("possuiA").innerHTML = "Tem letra A: " + procuraletra;
         
         let palavraMinusculo = palavra1.toLocaleLowerCase();
         let textoMinusculo = document.getElementById("minusculo").innerHTML = "Palavra em Minusculo: " + palavraMinusculo;
@@ -53,6 +60,9 @@
 
         let trocaLetra = palavra1.replace("a", "@");
         let novaLetra = document.getElementById("letraalterada").innerHTML = "Mudou de (a) para (@): " + trocaLetra;
+
+        let localDaLetra = palavra1.at(2);
+        let posicaodaletra = document.getElementById("segundaposicao").innerHTML = "O at(2) é: " + localDaLetra;
     };
 
     // let frase = palavra1.concat(" ", palavra2);

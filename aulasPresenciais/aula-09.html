@@ -20,31 +20,39 @@
     <p id="tamanho"></p>
     <p id="juntos"></p>
     <p id="corta"></p>
+    <p id="minusculo"></p>
+    <p id="letraalterada"></p>
     
 </body>
 
 <script>
-    let palavra1 = "";
-    let palavra2 = "";
+    // let palavra1 = "";
+    // let palavra2 = "";
 
     let tamanho = "";
     let tamanhoPalavra = "";
 
 
     function mostrarDados() {
-        palavra1 = document.getElementById("texto1").value;
+    let palavra1 = document.getElementById("texto1").value;
         tamanho = palavra1.length;
         tamanhoPalavra = document.getElementById("tamanho").innerHTML = "O tamanho da Palavra é: " + tamanho;
 
-        palavra2 = document.getElementById("texto2").value;
+    let palavra2 = document.getElementById("texto2").value;
         let doisTextos = palavra1 + " " + palavra2;
         let textosJuntos = document.getElementById("juntos").innerHTML = "O Concat é: " + doisTextos;
 
         let corte = palavra1.slice(0,4);
         let mostrarCorte = document.getElementById("corta").innerHTML = "Palavra cortada: " + corte;
-
         
+        let palavraMinusculo = palavra1.toLocaleLowerCase();
+        let textoMinusculo = document.getElementById("minusculo").innerHTML = "Palavra em Minusculo: " + palavraMinusculo;
+        
+        let palavraMaiusculo = palavra1.toLocaleUpperCase();
+        let textoMaiusculo = document.getElementById("minusculo").innerHTML = "Palavra em Maiúsculo: " + palavraMaiusculo;
 
+        let trocaLetra = palavra1.replace("a", "@");
+        let novaLetra = document.getElementById("letraalterada").innerHTML = "Mudou de (a) para (@): " + trocaLetra;
     };
 
     // let frase = palavra1.concat(" ", palavra2);

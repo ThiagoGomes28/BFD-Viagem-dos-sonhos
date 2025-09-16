@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loja Simples</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <h1>Loja Online</h1>
+  
+  <div class="container">
+    <!-- Produtos -->
+    <div class="produtos">
+      <h2>Produtos</h2>
+      <div class="produto">
+        <span>Camiseta</span>
+        <span>R$ 50</span>
+        <button class="btn-adicionar" onclick="adicionarProduto('Camiseta', 50)">Adicionar</button>
+      </div>
+      <div class="produto">
+        <span>Tênis</span>
+        <span>R$ 200</span>
+        <button class="btn-adicionar" onclick="adicionarProduto('Tênis', 200)">Adicionar</button>
+      </div>
+      <div class="produto">
+        <span>Boné</span>
+        <span>R$ 30</span>
+        <button class="btn-adicionar" onclick="adicionarProduto('Boné', 30)">Adicionar</button>
+      </div>
+      <div class="produto">
+        <span>Óculos</span>
+        <span>R$ 100</span>
+        <button class="btn-adicionar" onclick="adicionarProduto('Óculos', 100)">Adicionar</button>
+      </div>
+    </div>
+
+    <!-- Carrinho -->
+    <div class="carrinho">
+      <h2>Carrinho</h2>
+      <div id="lista-carrinho"></div>
+      <div class="total">Total: R$ <span id="total">0</span></div>
+    </div>
+  </div>
+    <script src="js.js"></script>
+</body>
+
+</html>

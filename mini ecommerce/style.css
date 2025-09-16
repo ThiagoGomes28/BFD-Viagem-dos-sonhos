@@ -1,0 +1,67 @@
+body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    h1 {
+      text-align: center;
+      width: 100%;
+    }
+
+    .container {
+      display: flex;
+      width: 100%;
+      gap: 40px;
+    }
+
+    .produtos, .carrinho {
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      padding: 20px;
+      width: 45%;
+    }
+
+    .produto, .item-carrinho {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin: 10px 0;
+      padding: 10px;
+      border-bottom: 1px solid #eee;
+    }
+
+    button {
+      padding: 5px 10px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      opacity: 0.8;
+    }
+
+    .btn-adicionar {
+      background-color: #4CAF50;
+      color: white;
+    }
+
+    .btn-mais {
+      background-color: #2196F3;
+      color: white;
+      margin: 0 5px;
+    }
+
+    .btn-menos {
+      background-color: #f44336;
+      color: white;
+      margin: 0 5px;
+    }
+
+    .total {
+      margin-top: 20px;
+      font-weight: bold;
+      text-align: right;
+    }

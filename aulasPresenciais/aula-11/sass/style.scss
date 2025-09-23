@@ -1,0 +1,36 @@
+body {
+    background-color: rgb(19, 18, 18);
+}
+
+h1 {
+    color: blue;
+}
+
+$cor: orange;
+
+p {
+    color: $cor;
+}
+
+.texto1 {
+    color: green;
+}
+.texto2 {
+    color: red;
+}
+.texto3 {
+    color: yellow;
+}
+
+.caixa {
+    ul {
+        li {
+            color: aqua;
+        }
+    }
+    a {
+        color: rgb(231, 92, 11);
+    }
+}
+
+@import 'secao1';

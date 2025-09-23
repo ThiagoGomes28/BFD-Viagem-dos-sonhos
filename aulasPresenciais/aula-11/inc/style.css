@@ -1,0 +1,36 @@
+body {
+  background-color: rgb(19, 18, 18);
+}
+
+h1 {
+  color: blue;
+}
+
+p {
+  color: orange;
+}
+
+.texto1 {
+  color: green;
+}
+
+.texto2 {
+  color: red;
+}
+
+.texto3 {
+  color: yellow;
+}
+
+.caixa ul li {
+  color: aqua;
+}
+.caixa a {
+  color: rgb(231, 92, 11);
+}
+
+.secao1 {
+  color: violet;
+}
+
+/*# sourceMappingURL=style.css.map */

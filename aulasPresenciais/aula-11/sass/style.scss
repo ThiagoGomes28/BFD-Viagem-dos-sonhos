@@ -1,16 +1,20 @@
+@import 'secao1';
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
 
 *{
     padding: 0;
     margin: 0;
-}
-
-body {
-    background-color: rgb(184, 184, 184);
+    font-family: Ubuntu, system-ui, sans-serif;
 }
 
 $corPrincipal: rgb(0, 174, 255);
 $corSecundaria: rgb(75, 73, 73);
 $corClara: aliceblue;
+
+body {
+    background-color: rgb(184, 184, 184);
+}
 
 #menu{
     padding: 20px;
@@ -42,11 +46,13 @@ a {
     text-align: center;
     justify-content: center;
     align-items: center;
+    gap: 50px;
 }
 
 button {
     padding: 10px;
     width: 200px;
+    border-radius: 5px;
 
     &:hover{
         background-color: $corSecundaria;
@@ -54,35 +60,61 @@ button {
     }
 }
 
-h1 {
-    color: blue;
+ #cartoes {
+    background-color: aqua;
+    display: flex;
+    gap: 10px;
+    height: 250px;
+    align-items: center;
 }
 
-$cor: orange;
+.cartao {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    border: 2px solid;
+    border-radius: 5px;
+    background-color: $corSecundaria;
+    height: 200px;
+    cursor: pointer;
 
-p {
-    color: $cor;
-}
-
-.texto1 {
-    color: green;
-}
-.texto2 {
-    color: red;
-}
-.texto3 {
-    color: yellow;
-}
-
-.caixa {
-    ul {
-        li {
-            color: aqua;
-        }
-    }
-    a {
-        color: rgb(231, 92, 11);
+    &:hover{
+        transform: scale(1.5);
     }
 }
 
-@import 'secao1';
+h2, p {
+    color: $corClara;
+}
+
+// h1 {
+//     color: blue;
+// }
+
+// $cor: orange;
+
+// p {
+//     color: $cor;
+// }
+
+// .texto1 {
+//     color: green;
+// }
+// .texto2 {
+//     color: red;
+// }
+// .texto3 {
+//     color: yellow;
+// }
+
+// .caixa {
+//     ul {
+//         li {
+//             color: aqua;
+//         }
+//     }
+//     a {
+//         color: rgb(231, 92, 11);
+//     }
+// }

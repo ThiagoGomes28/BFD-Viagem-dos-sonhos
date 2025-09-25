@@ -1,0 +1,85 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+.secao1 {
+  color: violet;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: Ubuntu, system-ui, sans-serif;
+}
+
+body {
+  background-color: rgb(184, 184, 184);
+}
+
+#menu {
+  padding: 20px;
+  background-color: rgb(0, 174, 255);
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  height: 1rem;
+}
+
+a {
+  text-decoration: none;
+  margin: 10px;
+  color: rgb(75, 73, 73);
+  padding: 20px;
+}
+a:hover {
+  background-color: rgb(75, 73, 73);
+  color: aliceblue;
+}
+
+#container {
+  display: flex;
+  flex-direction: column;
+  height: 80vh;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+
+button {
+  padding: 10px;
+  width: 200px;
+  border-radius: 5px;
+}
+button:hover {
+  background-color: rgb(75, 73, 73);
+  color: aliceblue;
+}
+
+#cartoes {
+  display: flex;
+  gap: 40px;
+  height: 250px;
+  align-items: center;
+}
+
+.cartao {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px;
+  border: 2px solid;
+  border-radius: 5px;
+  background-color: rgb(75, 73, 73);
+  height: 200px;
+  cursor: pointer;
+  box-shadow: 0px -5px 5px rgb(0, 174, 255);
+}
+.cartao:hover {
+  transform: scale(1.25);
+}
+
+h2, p {
+  color: aliceblue;
+}
+
+/*# sourceMappingURL=style.css.map */

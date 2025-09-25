@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loja - online</title>
+</head>
+
+<body>
+    <h1>Loja online</h1>
+    <div>
+        <h2>Filtros</h2>
+
+        <!-- colocar filtros, como: ordenar, por preço, ordem alfabetica -->
+        <input type="text">
+        <input type="text">
+        <button>Pronto</button>
+    </div>
+    <div class="corpoDoSite">
+        <h2>Produto</h2>
+        <div id="produtos">
+        </div>
+        <div id="carrinho">
+            <h2>Carrinho</h2>
+            <span></span>
+        </div>
+    </div>
+    <script>
+
+        let produtos = [
+            {
+                "nome": "camiseta",
+                "preco": 200
+            },
+            {
+                "nome": "Tenis",
+                "preco": 100
+            },
+            {
+                "nome": "Óculos",
+                "preco": 50
+            },
+            {
+                "nome": "Calça",
+                "preco": 80
+            }
+        ]
+
+        function mostraProdutos() {
+            let listaProdutos = document.getElementById("produtos");
+            listaProdutos.innerHTML = "";
+
+            for (let i = 0; i < produtos.length; i++) {
+                listaProdutos.innerHTML += `<div class= "produto">${produtos[i].nome}<br>` +
+                    `<b>${produtos[i].preco}</b><br>` +
+                    `<button onclick="adicionarProduto(${i})">Adicionar</button></div><br>`;
+            }
+        }
+
+        function adicionarProduto() {
+            console.log("Deu Certo!!!");
+        }
+
+        mostraProdutos();
+    </script>
+</body>
+
+</html>

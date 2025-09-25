@@ -61,9 +61,8 @@ button {
 }
 
  #cartoes {
-    background-color: aqua;
     display: flex;
-    gap: 10px;
+    gap: 40px;
     height: 250px;
     align-items: center;
 }
@@ -78,9 +77,10 @@ button {
     background-color: $corSecundaria;
     height: 200px;
     cursor: pointer;
+    box-shadow: 0px -5px 5px $corPrincipal;
 
     &:hover{
-        transform: scale(1.5);
+        transform: scale(1.25);
     }
 }
 

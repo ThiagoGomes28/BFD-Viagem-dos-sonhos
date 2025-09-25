@@ -1,5 +1,57 @@
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
 body {
-    background-color: rgb(19, 18, 18);
+    background-color: rgb(184, 184, 184);
+}
+
+$corPrincipal: rgb(0, 174, 255);
+$corSecundaria: rgb(75, 73, 73);
+$corClara: aliceblue;
+
+#menu{
+    padding: 20px;
+    background-color: $corPrincipal;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 1rem;
+}
+
+a {
+    text-decoration: none;
+    margin: 10px;
+    color: $corSecundaria;
+    padding: 20px;
+
+    &:hover{
+        background-color: $corSecundaria;
+        color: $corClara;
+    }
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+    height: 80vh;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+button {
+    padding: 10px;
+    width: 200px;
+
+    &:hover{
+        background-color: $corSecundaria;
+        color: $corClara;
+    }
 }
 
 h1 {
